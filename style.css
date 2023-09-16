@@ -1,0 +1,244 @@
+html, body {
+    margin: 0;
+}
+
+body{
+    background-color: orange;
+}
+
+#biker{
+    /* margin: 0; */
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bg-season img{
+    /* visibility: hidden; */
+    /* display: none; */
+    /* background-image: url('Images/Cherry_blossom.gif');
+    background-size: contain;
+    background-repeat: no-repeat; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: scaleX(-1);
+    /* object-fit: contain; */
+    max-width: 100%;
+    height: 72%;
+    width: 100%;
+    /* max-height: 100%; */
+    /* background-image: 100% 100%; */
+}
+
+#bg-sn img{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+    max-height: 75%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* object-position: top; */
+
+    animation: animateBg1 10s linear infinite;
+}
+
+#bg-sn2 img{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+    max-height: 75%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* object-position: top; */
+    left:100%;
+
+    animation: animateBg1 10s linear infinite;
+}
+
+#bg-cb img{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    max-height: 75%;
+    height: 100%;
+    /* left:100%; */
+
+    animation: animateBg1 10s linear infinite;
+}
+
+#bg-cb2 img{
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    max-height: 75%;
+    height: 100%;
+    left:100%;
+
+    animation: animateBg1 10s linear infinite;
+}
+
+#street-prime img{
+    position:absolute;
+    /* max-width: 100%; */
+    height: 200px;
+    /* top: 72%; */
+    bottom: 0;
+    /* left: 0; */
+    width: 100%;
+
+    /* min-height: 200px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%; */
+    /* max-height: 100%; */
+    /* left: 50%; */
+    /* width: auto\9; */
+    /* transform: scew(30deg,20deg); */
+    /* transform: scewY(20deg) */
+    /* background-repeat: repeat-x; */
+    /* animation-name: animateBg;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    animation: animateBg1 4s linear infinite;
+    
+}
+
+@keyframes animateBg1{
+    from
+    {
+        transform: translateX(0%);
+    }
+    to
+    {
+        transform: translateX(-100%);
+    }
+}
+
+#street-second img{
+    position:absolute;
+    /* max-width: 100%; */
+    height: 200px;
+    /* top: 72%; */
+    bottom: 0;
+    left: 0;
+    /* left: 0; */
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    animation: animateBg2 4s linear infinite;
+}
+
+@keyframes animateBg2{
+    from
+    {
+        transform: translateX(100%);
+    }
+    to
+    {
+        transform: translateX(0%);
+    }
+}
+
+#fence img{
+    position: absolute;
+    /* bottom: 21%; */ 
+    /* left:-2.1%; */
+    /* bottom:10%; */
+    /* bottom:136px; */
+    /* bottom: 95px; */
+    max-width: 100%;
+    width: 100%;
+    max-height: 75%;
+    height: 50%;
+
+    /* max-width: 100%; */
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+    /* overflow-x: auto; */
+    /* white-space: nowrap; */
+    /* background: url(Images/Fence.png); */
+    /* background-size: contain; */
+    /* transform: scaleX(1.06); */
+    bottom:20%;
+    animation: animateBg1 4.5s linear infinite;
+
+    /* position: absolute;
+    width: 1050px;
+    left: 25%;
+    transform: scaleX(2);
+    position: fixed; */
+}
+
+#fence2 img{
+    position: absolute;
+    /* left:36%; */
+    /* left:37%; */
+    /* bottom: 21%; */
+    /* bottom:136px; */
+
+    max-width: 100%;
+    width: 100%;
+    max-height: 75%;
+    height: 50%;
+    left: 100%;
+    bottom:20%;
+
+    animation: animateBg1 4.5s linear infinite;
+    
+}
+
+/* #fence3{
+    position: absolute;
+    left:73%;
+    bottom:136px;
+    animation: animateBg1 4.5s linear infinite;
+}
+
+#fence4{
+    position: absolute;
+    left:110%;
+    bottom:136px;
+    animation: animateBg1 4.5s linear infinite;
+} */
+
+
+.button-panel{
+    /* top:100px; */
+    position: relative;
+    /* top:90vh; */
+    display: none;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.button-starter{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    /* bottom:0%; */
+
+    /* top:90vh; */
+    /* top:0%; */
+}
+
+#organizer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    background-color: rgb(255, 0, 0); opacity: 0.5;
+    /* background-color: red; */
+    width:250px;
+    height:150px;
+    padding: 25px;
+}
